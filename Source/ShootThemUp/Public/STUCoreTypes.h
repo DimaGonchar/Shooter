@@ -7,6 +7,13 @@ class ASTUBaseWeapon;
 
 DECLARE_MULTICAST_DELEGATE_OneParam(FOnClipEmptySignature, ASTUBaseWeapon*);
 
+UENUM(BlueprintType)
+enum class UPlayerViewCameraMode: uint8
+{
+    E_FirstPerson UMETA(DisplayName = "First Person"),
+    E_ThirdPerson UMETA(DisplayName = "Third Person")
+};
+
 USTRUCT(BlueprintType)
 struct FAmmoData
 {
